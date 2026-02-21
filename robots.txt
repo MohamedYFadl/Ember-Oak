@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ember-my2fszea3-mohamedyfadls-projects.vercel.app/sitemap.xml
