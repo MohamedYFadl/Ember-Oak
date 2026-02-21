@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Ember & Oak — a Michelin-starred fine dining restaurant in Mayfair, London. Artisan cuisine crafted with open-flame technique, seasonal ingredients, and genuine hospitality." />
+    <meta property="og:title" content="Ember & Oak – Fine Dining" />
+    <meta property="og:description"
+        content="Where fire meets flavor. Reserve your table at London's premier open-flame restaurant." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://emberandoak.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
+    <title>Ember &amp; Oak – Fine Dining</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="bg-cream text-charcoal">
+    <!-- Skip to content -->
+    <a href="#hero"
+        class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-100 focus:bg-ember focus:text-cream focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm">Skip
+        to content</a>
+
+    <!-- ==========> S T A R T     N  A  V   B  A  R  <========== -->
+    <nav id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-charcoal/95 backdrop-blur-md"
+        role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
+
+            <!-- Logo -->
+            <a href="#hero" class="font-display text-2xl font-bold text-cream tracking-wide">
+                Ember <span class="text-ember">&</span> Oak
+            </a>
+
+            <!-- Desktop nav -->
+            <ul class="hidden md:flex items-center gap-8 text-sm text-cream/80 font-body tracking-wide">
+                <li><a href="#about" class="nav-link hover:text-cream transition-colors">About</a></li>
+                <li><a href="#products" class="nav-link hover:text-cream transition-colors">Menu</a></li>
+                <li><a href="#featured" class="nav-link hover:text-cream transition-colors">Featured</a></li>
+                <li><a href="#testimonials" class="nav-link hover:text-cream transition-colors">Reviews</a></li>
+                <li><a href="#contact" class="nav-link hover:text-cream transition-colors">Contact</a></li>
+                <li><a href="#cta" class="btn-ember text-sm px-6 py-2 rounded-lg transition-all duration-500">Reserve a
+                        Table</a></li>
+            </ul>
+
+            <!-- Hamburger -->
+            <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <span class="ham-bar w-6 h-0.5 bg-cream transition-all duration-300"></span>
+                <span class="ham-bar w-6 h-0.5 bg-cream transition-all duration-300"></span>
+                <span class="ham-bar w-6 h-0.5 bg-cream transition-all duration-300"></span>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden bg-charcoal/98 border-t border-white/10">
+            <ul class="flex flex-col px-6 py-4 gap-4 text-cream/80 font-body">
+                <li><a href="#about" class="mobile-nav-link block py-1 hover:text-ember transition-colors">About</a>
+                </li>
+                <li><a href="#products" class="mobile-nav-link block py-1 hover:text-ember transition-colors">Menu</a>
+                </li>
+                <li><a href="#featured"
+                        class="mobile-nav-link block py-1 hover:text-ember transition-colors">Featured</a></li>
+                <li><a href="#testimonials"
+                        class="mobile-nav-link block py-1 hover:text-ember transition-colors">Reviews</a></li>
+                <li><a href="#contact" class="mobile-nav-link block py-1 hover:text-ember transition-colors">Contact</a>
+                </li>
+                <li><a href="#cta" class="mobile-nav-link btn-ember text-sm text-center block">Reserve a Table</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ==========> E  N  D    N  A  V   B  A  R  <========== -->
+
+    <main>
+        <!-- ==========> S T A R T     H E R O   S E C T I O N  <========== -->
+        <section id="hero" class="relative min-h-screen flex items-center justify-center text-center px-6 pt-20">
+            <div class="relative z-10 max-w-4xl mx-auto pt-5 pb-10">
+                <p class="font-body text-ember tracking-[0.3em] uppercase text-sm mb-6 opacity-90">Fine Dining
+                    Experience
+                </p>
+                <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-bold text-cream leading-none mb-6">
+                    Where Fire<br /><em class="text-ember">Meets</em> Flavor
+                </h1>
+                <p class="font-body text-cream/70 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
+                    Artisan cuisine crafted with open-flame technique, seasonal ingredients, and the warmth of genuine
+                    hospitality.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center items-center">
+                    <a href="#featured" class="btn-ember py-2 px-4 rounded-2xl transition-all duration-500">Explore Our
+                        Menu</a>
+                    <a href="#cta"
+                        class="btn-outline border-cream/40 py-2 px-4 text-cream hover:bg-cream hover:text-charcoal rounded-2xl transition-all duration-500">Book
+                        a
+                        Table</a>
+                </div>
+                <div class="mt-16 flex justify-center flex-wrap gap-10 text-cream/50 text-sm font-body">
+                    <div class="text-center">
+                        <div class="font-display text-3xl font-bold text-ember">12+</div>Years of Excellence
+                    </div>
+                    <div class="w-px bg-white/10 hidden sm:block"></div>
+                    <div class="text-center">
+                        <div class="font-display text-3xl font-bold text-ember">40+</div>Signature Dishes
+                    </div>
+                    <div class="w-px bg-white/10 hidden sm:block"></div>
+                    <div class="text-center">
+                        <div class="font-display text-3xl font-bold text-ember">3</div>Michelin Stars
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative ember glow blob -->
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-ember/20 blur-3xl rounded-full"></div>
+        </section>
+        <!-- ==========> E  N  D    H E R O   S E C T I O N  <========== -->
+
+
+        <!-- ==========> S T A R T     A B O U T   S E C T I O N  <========== -->
+        <section id="about" class="py-24 px-6 bg-cream">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+                <!-- Image mosaic -->
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="card-lift rounded-2xl overflow-hidden aspect-3/4 bg-oak/20">
+                        <img src="./assets/Images/Restaurant interior.jpg" alt="Restaurant interior"
+                            class="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <div class="flex flex-col gap-4 md:pt-8">
+                        <div class="card-lift rounded-2xl overflow-hidden aspect-square bg-ember/20">
+                            <img src="./assets/Images/Dish.jpg" alt="Dish" class="w-full h-full object-cover"
+                                loading="lazy" />
+                        </div>
+                        <div class="card-lift rounded-2xl overflow-hidden aspect-square bg-charcoal/10">
+                            <img src="./assets/Images/chef.jpg" alt="Chef" class="w-full h-full object-cover"
+                                loading="lazy" />
+                        </div>
+                    </div>
+                    <!-- Floating badge -->
+                    <div
+                        class="absolute -bottom-4 -right-4 bg-ember text-cream rounded-2xl p-4 shadow-xl text-center font-display">
+                        <div class="text-4xl font-bold">12</div>
+                        <div class="text-xs font-body tracking-widest uppercase">Years of<br />Craft</div>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div>
+                    <p class="dec-line text-oak text-xs tracking-[0.3em] uppercase mb-4">Our Story</p>
+                    <h2 class="font-display text-5xl md:text-6xl font-bold leading-tight mb-6">
+                        Passion Cooked<br /><em class="text-ember">Over Open Flame</em>
+                    </h2>
+                    <p class="text-charcoal/70 leading-relaxed mb-5">
+                        Ember & Oak was born from a single obsession: the transformative power of fire on food. Founded
+                        in
+                        2012 by Chef Marco Delacroix, every dish that leaves our kitchen carries the story of that
+                        flame—the
+                        char, the smoke, the caramelized perfection only heat can create.
+                    </p>
+                    <p class="text-charcoal/70 leading-relaxed mb-8">
+                        We partner with local farms within 60 miles to source ingredients at peak freshness, letting
+                        seasonality guide our ever-evolving menu. Our open kitchen invites you to watch the craft unfold
+                        in
+                        real time.
+                    </p>
+                    <div class="flex flex-wrap gap-6 mb-8 text-sm font-body">
+                        <div class="flex items-center gap-2"><span
+                                class="w-2 h-2 rounded-full bg-ember"></span>Farm-to-table sourcing</div>
+                        <div class="flex items-center gap-2"><span
+                                class="w-2 h-2 rounded-full bg-ember"></span>Open-flame
+                            cooking</div>
+                        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-ember"></span>Seasonal
+                            menus</div>
+                        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-ember"></span>Private
+                            dining available</div>
+                    </div>
+                    <a href="#featured"
+                        class="btn-ember px-4 py-2 text-white rounded-2xl transition-all duration-500">Discover Our
+                        Dishes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========> E  N  D    A B O U T    S E C T I O N  <========== -->
+
+        <!-- ==========> S T A R T   F U L L   M E N U    S E C T I O N <========== -->
+
+        <section id="products" class="py-24 px-6 section-cream-dark">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="dec-line text-oak text-xs tracking-[0.3em] uppercase mb-4">What We Serve</p>
+                    <h2 class="font-display text-5xl md:text-6xl font-bold">The Full Menu</h2>
+                    <p class="text-charcoal/60 mt-4 max-w-xl mx-auto">Every item lovingly prepared with seasonal produce
+                        and
+                        open-fire technique.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Product Card Template repeated 6× -->
+
+                    <!-- 1 -->
+                    <div class="card-lift bg-cream rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80"
+                                alt="Truffle Arancini"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display text-xl font-semibold">Truffle Arancini</h3>
+                                <span class="text-ember font-display text-xl font-bold">$18</span>
+                            </div>
+                            <p class="text-charcoal/60 text-sm leading-relaxed">Crispy risotto balls filled with black
+                                truffle, fontina cheese, and wild mushroom ragù. Served with roasted garlic aioli.</p>
+                            <span
+                                class="mt-3 inline-block text-xs font-body tracking-widest uppercase text-oak border border-oak/30 rounded-full px-3 py-1">Starter</span>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="card-lift bg-cream rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&q=80"
+                                alt="Flame-Seared Duck Breast"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display text-xl font-semibold">Flame-Seared Duck Breast</h3>
+                                <span class="text-ember font-display text-xl font-bold">$46</span>
+                            </div>
+                            <p class="text-charcoal/60 text-sm leading-relaxed">Magret duck breast kissed by oak embers,
+                                glazed in cherry reduction, served with roasted root vegetables and duck jus.</p>
+                            <span
+                                class="mt-3 inline-block text-xs font-body tracking-widest uppercase text-oak border border-oak/30 rounded-full px-3 py-1">Main</span>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="card-lift bg-cream rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80"
+                                alt="Wagyu Ribeye"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display text-xl font-semibold">Wagyu Ribeye 300g</h3>
+                                <span class="text-ember font-display text-xl font-bold">$89</span>
+                            </div>
+                            <p class="text-charcoal/60 text-sm leading-relaxed">A5 Japanese Wagyu over hardwood coals,
+                                finished with compound herb butter, bone marrow flan, and crispy shallots.</p>
+                            <span
+                                class="mt-3 inline-block text-xs font-body tracking-widest uppercase text-ember border border-ember/30 rounded-full px-3 py-1">Signature</span>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="card-lift bg-cream rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=600&q=80"
+                                alt="Burrata &amp; Heirloom Tomato"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display text-xl font-semibold">Burrata & Heirloom Tomato</h3>
+                                <span class="text-ember font-display text-xl font-bold">$22</span>
+                            </div>
+                            <p class="text-charcoal/60 text-sm leading-relaxed">Silky hand-pulled burrata,
+                                fire-blistered
+                                heirloom tomatoes, aged balsamic, basil oil, and sourdough crostini.</p>
+                            <span
+                                class="mt-3 inline-block text-xs font-body tracking-widest uppercase text-oak border border-oak/30 rounded-full px-3 py-1">Starter</span>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="card-lift bg-cream rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1560684352-8497838a2229?w=600&q=80"
+                                alt="Charred Salmon"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display text-xl font-semibold">Charred King Salmon</h3>
+                                <span class="text-ember font-display text-xl font-bold">$52</span>
+                            </div>
+                            <p class="text-charcoal/60 text-sm leading-relaxed">Wild-caught King salmon charred on cedar
+                                plank, lemon-caper beurre blanc, fennel salad, and roe garnish.</p>
+                            <span
+                                class="mt-3 inline-block text-xs font-body tracking-widest uppercase text-oak border border-oak/30 rounded-full px-3 py-1">Main</span>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="card-lift bg-cream rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80"
+                                alt="Smoked Chocolate Fondant"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display text-xl font-semibold">Smoked Chocolate Fondant</h3>
+                                <span class="text-ember font-display text-xl font-bold">$16</span>
+                            </div>
+                            <p class="text-charcoal/60 text-sm leading-relaxed">72% Valrhona dark chocolate fondant with
+                                a
+                                hint of mesquite smoke, vanilla bean ice cream, and salted caramel tuile.</p>
+                            <span
+                                class="mt-3 inline-block text-xs font-body tracking-widest uppercase text-oak border border-oak/30 rounded-full px-3 py-1">Dessert</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ==========> E  N  D   F U L L   M E N U    S E C T I O N <========== -->
+        <!-- ==========> S T A R T  F E A T U R E D    D I S  H E S    S E  C T  I O N  <========== -->
+
+
+        <section id="featured" class="py-24 px-6 bg-charcoal text-cream overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="dec-line text-ember text-xs tracking-[0.3em] uppercase mb-4">Chef's Picks</p>
+                    <h2 class="font-display text-5xl md:text-6xl font-bold">Featured Dishes</h2>
+                    <p class="text-cream/50 mt-4 max-w-xl mx-auto">The dishes Chef Marco is most proud of—stories on a
+                        plate.</p>
+                </div>
+
+                <!-- Large feature layout -->
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+
+                    <!-- Big feature -->
+                    <div class="card-lift relative rounded-3xl overflow-hidden group" style="min-height:480px;">
+                        <img src="./assets/Images/Tomahawk Côte de Boeuf.jpg" alt="Tomahawk"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            loading="lazy" />
+                        <div class="absolute inset-0 bg-linear-to-t from-charcoal via-charcoal/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <span class="text-xs font-body tracking-widest uppercase text-ember mb-2 block">Chef's
+                                Masterpiece</span>
+                            <h3 class="font-display text-4xl font-bold mb-2">Tomahawk <span lang="fr">Côte de
+                                    Boeuf</span></h3>
+                            <p class="text-cream/70 text-sm mb-4 max-w-sm">28-day dry-aged tomahawk over live hardwood
+                                coals. Carved tableside. Serves two. An experience, not just a meal.</p>
+                            <div class="flex items-center gap-4">
+                                <span class="font-display text-3xl text-ember font-bold">$135</span>
+                                <span class="text-cream/50 text-sm">for two</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Two stacked features -->
+                    <div class="flex flex-col gap-8">
+                        <div class="card-lift relative rounded-3xl overflow-hidden group flex-1"
+                            style="min-height:220px;">
+                            <img src="./assets/Images/Smoked Lobster Bisque.jpg" alt="Lobster Bisque"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                loading="lazy" />
+                            <div class="absolute inset-0 bg-linear-to-t from-charcoal/90 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-6">
+                                <span class="text-xs font-body tracking-widest uppercase text-ember mb-1 block">Crowd
+                                    Favourite</span>
+                                <h3 class="font-display text-2xl font-bold mb-1">Smoked Lobster Bisque</h3>
+                                <div class="flex items-center gap-3">
+                                    <span class="font-display text-xl text-ember font-bold">$28</span>
+                                    <span class="text-cream/50 text-xs">bowl</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-lift relative rounded-3xl overflow-hidden group flex-1"
+                            style="min-height:220px;">
+                            <img src="./assets/Images/Espresso Tiramisu.jpg" alt="Tiramisu"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                loading="lazy" />
+                            <div class="absolute inset-0 bg-linear-to-t from-charcoal/90 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-6">
+                                <span class="text-xs font-body tracking-widest uppercase text-ember mb-1 block">Sweet
+                                    Finish</span>
+                                <h3 class="font-display text-2xl font-bold mb-1">Espresso Tiramisu</h3>
+                                <div class="flex items-center gap-3">
+                                    <span class="font-display text-xl text-ember font-bold">$14</span>
+                                    <span class="text-cream/50 text-xs">per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========> E  N  D    F E A T U R E D    D I S  H E S    S E  C T  I O N  <========== -->
+
+
+        <!-- ══════════════════════════════════════
+       TESTIMONIALS SECTION
+  ══════════════════════════════════════ -->
+        <section id="testimonials" class="py-24 px-6 bg-cream">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="dec-line text-oak text-xs tracking-[0.3em] uppercase mb-4">What Guests Say</p>
+                <h2 class="font-display text-5xl md:text-6xl font-bold mb-16">Honest Reviews</h2>
+
+                <!-- Slider wrapper -->
+                <div class="relative">
+                    <div id="testimonial-container" class="min-h-56" aria-live="polite" aria-atomic="true">
+
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="text-5xl text-ember mb-6 font-display">"</div>
+                            <p
+                                class="font-display text-2xl md:text-3xl italic font-medium leading-relaxed text-charcoal mb-8">
+                                An extraordinary evening. The Tomahawk was cooked to absolute perfection and the service
+                                made us feel like royalty. We'll be back for every anniversary.
+                            </p>
+                            <div class="flex items-center justify-center gap-4">
+                                <img src="https://i.pravatar.cc/60?img=47" alt="Sarah M."
+                                    class="w-12 h-12 rounded-full object-cover ring-2 ring-ember" loading="lazy"
+                                    decoding="async" />
+                                <div class="text-left">
+                                    <div class="font-body font-medium text-charcoal">Sarah M.</div>
+                                    <div class="text-xs text-charcoal/50 tracking-wide">London, UK — ★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="text-5xl text-ember mb-6 font-display">"</div>
+                            <p
+                                class="font-display text-2xl md:text-3xl italic font-medium leading-relaxed text-charcoal mb-8">
+                                The smoked lobster bisque alone was worth the trip from Paris. This is a restaurant that
+                                genuinely cares about every detail on the plate. Flawless from start to finish.
+                            </p>
+                            <div class="flex items-center justify-center gap-4">
+                                <img src="https://i.pravatar.cc/60?img=33" alt="Pierre D."
+                                    class="w-12 h-12 rounded-full object-cover ring-2 ring-ember" loading="lazy"
+                                    decoding="async" />
+                                <div class="text-left">
+                                    <div class="font-body font-medium text-charcoal">Pierre D.</div>
+                                    <div class="text-xs text-charcoal/50 tracking-wide">Paris, France — ★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="text-5xl text-ember mb-6 font-display">"</div>
+                            <p
+                                class="font-display text-2xl md:text-3xl italic font-medium leading-relaxed text-charcoal mb-8">
+                                Chef Marco is a true artist. The open kitchen lets you see the passion first-hand. The
+                                chocolate fondant with smoked notes is something I still dream about months later.
+                            </p>
+                            <div class="flex items-center justify-center gap-4">
+                                <img src="https://i.pravatar.cc/60?img=12" alt="Amara O."
+                                    class="w-12 h-12 rounded-full object-cover ring-2 ring-ember" loading="lazy"
+                                    decoding="async" />
+                                <div class="text-left">
+                                    <div class="font-body font-medium text-charcoal">Amara O.</div>
+                                    <div class="text-xs text-charcoal/50 tracking-wide">New York, USA — ★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="flex items-center justify-center gap-4 mt-10">
+                        <button id="prev-slide"
+                            class="w-10 h-10 rounded-full border border-charcoal/20 flex items-center justify-center hover:bg-ember hover:border-ember hover:text-cream transition-all duration-300"
+                            aria-label="Previous testimonial">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <!-- Dots -->
+                        <div class="flex gap-2" id="dots">
+                            <button data-slide="0" class="dot w-2 h-2 rounded-full bg-ember transition-all duration-300"
+                                aria-label="Go to testimonial 1"></button>
+                            <button data-slide="1"
+                                class="dot w-2 h-2 rounded-full bg-charcoal/20 transition-all duration-300"
+                                aria-label="Go to testimonial 2"></button>
+                            <button data-slide="2"
+                                class="dot w-2 h-2 rounded-full bg-charcoal/20 transition-all duration-300"
+                                aria-label="Go to testimonial 3"></button>
+                        </div>
+                        <button id="next-slide"
+                            class="w-10 h-10 rounded-full border border-charcoal/20 flex items-center justify-center hover:bg-ember hover:border-ember hover:text-cream transition-all duration-300"
+                            aria-label="Next testimonial">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ══════════════════════════════════════
+       CALL TO ACTION SECTION
+  ══════════════════════════════════════ -->
+        <section id="cta" class="py-28 px-6 relative overflow-hidden"
+            style="background: linear-gradient(135deg, #A33B20 0%, #C94B2C 50%, #7A5C3A 100%);">
+            <!-- Background texture -->
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%); background-size: 20px 20px;">
+            </div>
+
+            <div class="relative max-w-3xl mx-auto text-center text-cream">
+                <p class="font-body text-cream/70 tracking-[0.3em] uppercase text-sm mb-4">Limited Seats Each Evening
+                </p>
+                <h2 class="font-display text-5xl md:text-7xl font-bold leading-tight mb-6">
+                    Reserve Your<br />Table Tonight
+                </h2>
+                <p class="text-cream/80 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+                    Whether it's a romantic dinner for two or a celebration with family, our team will craft an evening
+                    you'll never forget. Tables fill fast—book now.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="tel:+010"
+                        class="inline-block bg-cream text-ember font-body font-medium px-10 py-4 rounded-full text-lg hover:bg-charcoal hover:text-cream transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                        📞 Call to Reserve
+                    </a>
+                    <a href="mailto:yasovic03@gmail.com"
+                        class="inline-block border-2 border-cream text-cream font-body font-medium px-10 py-4 rounded-full text-lg hover:bg-cream hover:text-ember transition-all duration-300 hover:-translate-y-1">
+                        ✉ Email Us
+                    </a>
+                </div>
+                <p class="mt-8 text-cream/50 text-sm">Opening hours: Tue – Sun · Lunch 12:00–14:30 · Dinner 18:30–22:30
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ══════════════════════════════════════
+       CONTACT INFO SECTION
+  ══════════════════════════════════════ -->
+        <section id="contact" class="py-24 px-6 bg-charcoal text-cream">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="dec-line text-ember text-xs tracking-[0.3em] uppercase mb-4">Find Us</p>
+                    <h2 class="font-display text-5xl md:text-6xl font-bold">Contact & Location</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Address -->
+                    <div class="card-lift contact-card rounded-2xl p-8 border border-white/5">
+                        <div class="w-10 h-10 rounded-xl bg-ember/20 flex items-center justify-center mb-5">
+                            <svg class="w-5 h-5 text-ember" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold mb-3 text-cream">Address</h3>
+                        <p class="text-cream/60 text-sm leading-relaxed">14 Ashwood Lane,<br />Mayfair, London<br />W1K
+                            4HB,
+                            United Kingdom</p>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="card-lift contact-card rounded-2xl p-8 border border-white/5">
+                        <div class="w-10 h-10 rounded-xl bg-ember/20 flex items-center justify-center mb-5">
+                            <svg class="w-5 h-5 text-ember" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold mb-3 text-cream">Phone</h3>
+                        <p class="text-cream/60 text-sm leading-relaxed">
+                            <a href="tel:+442071234567" class="hover:text-ember transition-colors">+44 (0)20 7123
+                                4567</a><br />
+                            <span class="text-xs text-cream/40">Reservations & Enquiries</span>
+                        </p>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="card-lift contact-card rounded-2xl p-8 border border-white/5">
+                        <div class="w-10 h-10 rounded-xl bg-ember/20 flex items-center justify-center mb-5">
+                            <svg class="w-5 h-5 text-ember" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold mb-3 text-cream">Email</h3>
+                        <p class="text-cream/60 text-sm leading-relaxed">
+                            <a href="mailto:reservations@emberandoak.com"
+                                class="hover:text-ember transition-colors break-all">reservations@emberandoak.com</a><br />
+                            <a href="mailto:hello@emberandoak.com"
+                                class="hover:text-ember transition-colors break-all">hello@emberandoak.com</a>
+                        </p>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="card-lift contact-card rounded-2xl p-8 border border-white/5">
+                        <div class="w-10 h-10 rounded-xl bg-ember/20 flex items-center justify-center mb-5">
+                            <svg class="w-5 h-5 text-ember" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-semibold mb-3 text-cream">Hours</h3>
+                        <div class="text-cream/60 text-sm space-y-1">
+                            <p><span class="text-cream/40">Mon:</span> Closed</p>
+                            <p><span class="text-cream/40">Tue–Fri:</span> 12:00–22:30</p>
+                            <p><span class="text-cream/40">Sat:</span> 11:00–23:00</p>
+                            <p><span class="text-cream/40">Sun:</span> 11:00–21:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+        <footer class="bg-charcoal border-t border-white/5 py-10 px-6">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                <a href="#hero" class="font-display text-2xl font-bold text-cream tracking-wide">
+                    Ember <span class="text-ember">&</span> Oak
+                </a>
+                <nav class="flex flex-wrap justify-center gap-6 text-cream/50 text-sm font-body">
+                    <a href="#about" class="hover:text-cream transition-colors">About</a>
+                    <a href="#products" class="hover:text-cream transition-colors">Menu</a>
+                    <a href="#featured" class="hover:text-cream transition-colors">Featured</a>
+                    <a href="#testimonials" class="hover:text-cream transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-cream transition-colors">Contact</a>
+                    <a href="#cta" class="hover:text-ember transition-colors">Reserve</a>
+                </nav>
+                <p class="text-cream/30 text-xs font-body text-center">© <span id="copyright-year"></span> Ember &amp;
+                    Oak. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Scroll to top button -->
+        <button id="scroll-top"
+            class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-ember text-cream shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-ember-dark hover:-translate-y-1 hover:shadow-2xl"
+            aria-label="Scroll to top">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+            </svg>
+        </button>
+
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

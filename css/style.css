@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+@theme {
+    --color-ember: #C94B2C;
+    --color-ember-light: #E8603E;
+    --color-ember-dark: #A33B20;
+    --color-oak: #7A5C3A;
+    --color-oak-light: #9B7A54;
+    --color-oak-dark: #5C4229;
+    --color-cream: #FAF6EF;
+    --color-cream-dark: #F0E8D8;
+    --color-charcoal: #1C1814;
+    --color-charcoal-mid: #2E2620;
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'DM Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--color-cream);
+    color: var(--color-charcoal);
+}
+
+/* ── Grain overlay ── */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.35;
+}
+
+/* ── Typography ── */
+.font-display {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* ── Nav link hover ── */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--color-ember);
+    transition: width .3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ── Active nav link ── */
+.nav-link.active {
+    color: var(--color-cream);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* ── Card hover lift ── */
+.card-lift {
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(28, 24, 20, .14);
+}
+
+/* ── Hero parallax bg ── */
+#hero {
+    background: linear-gradient(160deg, var(--color-charcoal) 0%, var(--color-charcoal-mid) 40%, #5C4229 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(201, 75, 44, .25) 0%, transparent 65%);
+}
+
+/* ── Decorative line ── */
+.dec-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dec-line::before,
+.dec-line::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: currentColor;
+    opacity: .25;
+}
+
+/* ── Testimonial slider ── */
+.testimonial-slide {
+    display: none;
+    animation: fadeSlide .5s ease;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ── Mobile menu ── */
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+}
+
+#mobile-menu.open {
+    max-height: 400px;
+}
+
+/* ── Btn base ── */
+.btn-ember {
+    @apply inline-block px-8 py-3 rounded-full text-cream font-body font-medium tracking-wide transition-all duration-300;
+    background: var(--color-ember);
+}
+
+.btn-ember:hover {
+    background: var(--color-ember-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(201, 75, 44, .4);
+}
+
+.btn-outline {
+    @apply inline-block px-8 py-3 rounded-full font-body font-medium tracking-wide border transition-all duration-300;
+    border-color: var(--color-ember);
+    color: var(--color-ember);
+}
+
+.btn-outline:hover {
+    background: var(--color-ember);
+    color: var(--color-cream);
+    transform: translateY(-2px);
+}
+
+/* ── Section backgrounds (moved from inline styles) ── */
+.section-cream-dark {
+    background: var(--color-cream-dark);
+}
+
+.contact-card {
+    background: var(--color-charcoal-mid);
+}
+
+/* ── Scroll-to-top button ── */
+#scroll-top {
+    transform: translateY(0);
+}
+
+#scroll-top.visible {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
